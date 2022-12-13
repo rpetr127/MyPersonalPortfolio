@@ -1,0 +1,18 @@
+<h1>Peter7Rom blog</h1>
+<h2>This is my blog.</h2>
+
+<div class="row">
+{% for blog in blogs %}
+<div class="col col-lg-4 col-md-6">
+
+    {% if blog.url %}      
+    <a href="{{ blog.url }}">
+    </a>
+    {% endif %}
+
+    <h3>{{ blog.title }}</h3>
+    <p>{{ blog.description }}</p>
+    <p>{{ blog.date }}</p>
+</div>    
+{% endfor %}
+</div>
