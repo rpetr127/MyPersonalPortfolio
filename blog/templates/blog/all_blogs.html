@@ -1,0 +1,22 @@
+{% extends "portfolio/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<h1 class="mt-5">Peter7Rom blog</h1>
+<h2 class="mt-5">This is my blog.</h2>
+<br>
+
+<div class="row">
+{% for blog in blogs %}
+<div class="col col-lg-4 col-md-6">  
+    <a href="{% url 'blog:detail' blog.id %}"><h3>{{ blog.title }}</h3></a>
+    </a>
+    <p>{{ blog.description|striptags|truncatechars:100 }}</p>
+    <p>{{ blog.date }}</p>
+</div>    
+{% endfor %}
+</div>
+
+{% endblock %}
