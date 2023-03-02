@@ -18,16 +18,16 @@ from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
 from django.views.decorators.csrf import csrf_exempt
+from ..views import AdminLoginView
 
 
 import blog
-import admin.views
 import portfolio.views
 import blog.views
 
 
 urlpatterns = [
-    path('admin/', admin.views.admin_view),
+    path('admin/login/', AdminLoginView.as_view(), name='admin_login'),
     path('', portfolio.views.home, name='home'),
     path('blog/', include('blog.urls'), name='blog')
 ]
