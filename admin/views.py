@@ -6,6 +6,6 @@ from django.contrib.admin.views.decorators import staff_member_required
 
 @method_decorator(staff_member_required, name='dispatch')
 class AdminLoginView(LoginView):
-    template_name = 'admin/login.html'
+    template_name = 'login.html'
     redirect_authenticated_user = True
     success_url = reverse_lazy('admin:index')
