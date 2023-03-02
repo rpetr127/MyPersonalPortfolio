@@ -21,13 +21,12 @@ from django.views.decorators.csrf import csrf_exempt
 
 
 import blog
-from admin.views import AdminLoginView
 import portfolio.views
 import blog.views
 
 
 urlpatterns = [
-    path('admin/', AdminLoginView.as_view(), name='admin_login'),
+    path('admin/', admin.site.urls),
     path('', portfolio.views.home, name='home'),
     path('blog/', include('blog.urls'), name='blog')
 ]
