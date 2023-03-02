@@ -18,10 +18,10 @@ from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
 from django.views.decorators.csrf import csrf_exempt
-from views import AdminLoginView
 
 
 import blog
+from admin.views import AdminLoginView
 import portfolio.views
 import blog.views
 
