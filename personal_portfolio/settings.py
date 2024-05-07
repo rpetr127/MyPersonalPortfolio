@@ -27,7 +27,6 @@ SECRET_KEY = 'django-insecure-%1r%qkgc!tv81mxfm0@v-oh=z$(1iza=1ho7m6m7+23x_&#*=i
 DEBUG = False
 
 ALLOWED_HOSTS = ['rpetr127-mypersonalportfolio-0212.twc1.net']
-PORT = 8000
 
 # Application definition
 
