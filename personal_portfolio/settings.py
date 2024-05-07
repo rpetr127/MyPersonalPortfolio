@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-%1r%qkgc!tv81mxfm0@v-oh=z$(1iza=1ho7m6m7+23x_&#*=i
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['rpetr127-mypersonalportfolio-cb54.twc1.net']
+ALLOWED_HOSTS = ['rpetr127-mypersonalportfolio-352d.twc1.net']
 
 PORT = 5050
 
