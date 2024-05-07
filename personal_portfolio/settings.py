@@ -28,6 +28,8 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['rpetr127-mypersonalportfolio-0212.twc1.net']
 
+PORT = 5050
+
 # Application definition
 
 INSTALLED_APPS = [
